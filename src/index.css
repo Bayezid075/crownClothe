@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: "open sans", sans-serif, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+* {
+  box-sizing: border-box;
+}
