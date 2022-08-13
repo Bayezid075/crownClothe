@@ -8,9 +8,9 @@ const addCartItem = (cartItems, ProductToAdd) => {
   // if exist then add more  quantity on that item otherwise create one
   if (exisitingItems) {
     return cartItems.map((cItem) =>
-      cartItems.id === ProductToAdd.id
-        ? { ...cartItems, quantity: cItem + 1 }
-        : cartItems
+      cItem.id === ProductToAdd.id
+        ? { ...cItem, quantity: cItem.quantity + 1 }
+        : cItem
     );
   }
   //return modified data or new data

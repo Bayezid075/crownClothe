@@ -1,5 +1,5 @@
 import React from "react";
-import { CartContext } from "../context/CartContext";
+
 import "./CartItem.scss";
 
 export default function CartItem({ cartItem }) {
