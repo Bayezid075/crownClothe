@@ -10,7 +10,7 @@ export default function CartDropDown() {
   const ClickHandler = () => {
     navigate("/checkout");
   };
-  console.log(cartItems.quantity);
+
   return (
     <div className="cart-dropdown-container">
       <div className="cart-items">
