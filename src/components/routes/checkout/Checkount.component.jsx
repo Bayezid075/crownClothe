@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { CartContext } from "../../context/CartContext";
 
 export default function Checkount() {
-  const { cartItems, addItemToCart } = useContext(CartContext);
+  const { cartItems, addItemToCart, removeCartItem } = useContext(CartContext);
 
   return (
     <div>
@@ -16,7 +16,7 @@ export default function Checkount() {
             <div key={id}>
               <h2> {name} </h2>
               <span> {quantity} </span>
-              <span>decriment </span>
+              <span onClick={() => removeCartItem(cartItem)}>decriment </span>
               <span onClick={() => addItemToCart(cartItem)}>incriment </span>
             </div>
           );
